@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>JavaScript Example</title>
+</head>
+<body>
+ <div id="myDiv">Initial text</div>
+ <button id="myButton">Click me</button>
+
+ <script>
+    document.getElementById("myButton").addEventListener("click", function() {
+      document.getElementById("myDiv").innerHTML = "New text";
+    });
+ </script>
+</body>
+</html>

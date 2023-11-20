@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Change Background Color</title>
+</head>
+<body>
+    <div id="myDiv" style="width:1000px;height: 1000px;background-color:blue;">Click me to change my background color!</div>
+
+    <script>
+        document.getElementById('myDiv').addEventListener('click', function() {
+            var randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
+            this.style.backgroundColor = randomColor;
+        });
+    </script>
+</body>
+</html>
